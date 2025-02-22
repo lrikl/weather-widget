@@ -52,8 +52,8 @@ async function updateWeather() {
 
     weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="weather-img">`;
     
-    temperatureElement.textContent = `${parseInt(data.main.temp)} °C`;
-    temperatureFeels.textContent = `відчувається: ${parseInt(data.main.feels_like)} °C`;
+    temperatureElement.textContent = `${parseInt(data.main.temp)}°C`;
+    temperatureFeels.textContent = `відчувається: ${parseInt(data.main.feels_like)}°C`;
     descriptionElement.textContent = `${data.weather[0].description}`;
 
     humidityElement.innerHTML = `
