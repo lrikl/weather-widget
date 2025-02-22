@@ -140,7 +140,7 @@ select, option, button {
 }
 
 .main-weather {
-    margin-bottom: clamp(24px, 4vw, 48px);
+    margin-bottom: clamp(24px, 3vw, 32px);
 }
 
 #last-update {
