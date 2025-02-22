@@ -30,7 +30,6 @@ img {
     padding: 16px;
     width: 100%;
     max-width: 400px;
-    backdrop-filter: blur(10px); 
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
@@ -97,7 +96,7 @@ img {
 
 #weather-icon {
     flex-shrink: 0;
-    width: clamp(80px, 10vw, 120px);
+    width: clamp(72px, 8vw, 100px);
 }
 
 #cities {
@@ -128,15 +127,6 @@ select, option, button {
 
 .secondary-weather > div {
     width: 30%;
-}
-
-.weather-type {
-    font-size: 14px;
-    margin-bottom: 4px;
-}
-
-.weather-data {
-    font-weight: bold;
 }
 
 .main-weather {
