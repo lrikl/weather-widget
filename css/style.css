@@ -72,9 +72,12 @@ img {
     gap: 8px;
 }
 
+.first-weather {
+    margin-bottom: 8px;
+}
+
 .first-weather-text {
     width: 100%;
-    margin-bottom: 16px;
 }
 
 #feels-temperature {
