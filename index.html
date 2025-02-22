@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>weather-widget</title>
+</head>
+<body>
+    <div class="weather-widget" id="weatherWidget">
+
+        <div class="head-weather">
+            <h1>Погода</h1>
+
+            <select id="cities">
+                <option value="Kyiv">Київ</option>
+                <option value="Kharkiv">Харків</option>
+                <option value="Odessa">Одеса</option>
+                <option value="Dnipro">Дніпро</option>
+                <option value="Donetsk">Донецьк</option>
+                <option value="Zaporizhzhia">Запоріжжя</option>
+                <option value="Lviv">Львів</option>
+                <option value="Kryvyi Rih">Кривий Ріг</option>
+                <option value="Mykolaiv">Миколаїв</option>
+                <option value="Luhansk">Луганськ</option>
+                <option value="Sevastopol">Севастополь</option>
+                <option value="Chernihiv">Чернігів</option>
+                <option value="Sumy">Суми</option>
+                <option value="Lutsk">Луцьк</option>
+                <option value="Poltava">Полтава</option>
+                <option value="Vinnytsia">Вінниця</option>
+                <option value="Zhytomyr">Житомир</option>
+                <option value="Khmelnytskyi">Хмельницький</option>
+                <option value="Cherkasy">Черкаси</option>
+                <option value="Rivne">Рівне</option>
+                <option value="Ternopil">Тернопіль</option>
+                <option value="Ivano-Frankivsk">Івано-Франківськ</option>
+                <option value="Kremenchuk">Кременчук</option>
+                <option value="Uzhhorod">Ужгород</option>
+                <option value="Melitopol">Мелітополь</option>
+                <option value="Brovary">Бровари</option>
+                <option value="Balakliya">Балаклія</option>
+                <option value="Berdyansk">Бердянськ</option>
+                <option value="Kostopil">Костопіль</option>
+                <option value="test">Тест на помилку</option>
+            </select>
+
+            <div class="time"><span class="current-day"></span> | <span class="current-time"></span></div>
+        </div>
+
+        <div class="main-weather">
+            <div class="first-weather">
+                <div id="weather-icon" data-update></div>
+                <div class="first-weather-text">
+                    <div class="temperature-wrap">
+                        <div id="weather-temperature" data-update></div>
+                        <div id="feels-temperature" data-update></div>
+                    </div>
+                    <div id="weather-description" data-update></div>
+                </div>
+            </div>
+            
+            <div class="secondary-weather">
+                <div id="wind" data-update></div>
+                <div id="humidity" data-update></div>
+                <div id="pressure" data-update></div>
+            </div>
+        </div>
+        
+        <button id="updateButton">Оновити погоду</button>
+        <div id="last-update"></div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
