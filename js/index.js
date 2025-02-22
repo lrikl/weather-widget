@@ -50,7 +50,7 @@ async function updateWeather() {
 
     const data = await response.json();
 
-    weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="img">`;
+    weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="weather-img">`;
     
     temperatureElement.textContent = `${parseInt(data.main.temp)} °C`;
     temperatureFeels.textContent = `відчувається: ${parseInt(data.main.feels_like)} °C`;
