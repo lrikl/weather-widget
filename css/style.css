@@ -5,7 +5,7 @@
 
 body {
     font-family: monospace;
-    background-color: #fff;
+    background-color: rgb(31,71,124);
     background: linear-gradient(180deg, rgba(31,71,124,1) 0%, rgba(20,32,61,1) 100%);
     min-height: 100vh;
     padding: clamp(10px, 4.5vw, 50px);
